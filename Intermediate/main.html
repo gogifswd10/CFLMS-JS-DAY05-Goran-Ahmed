@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script  type="text/javascript" src="main.json"></script> 
+</head>
+<body>
+<div id="result"></div>
+<script>
+let employees = 
+    {
+        "Workforce":                                     
+        [{
+        "UnID": "0850",
+        "Firstname": "Pascal",
+        "Familyname": "Pepi",
+        "Email": "pascalpepi0850@0850.at",
+        "Jobtitle": "Jr. Fullstack Developer",
+        "Salary": 1900,   
+    }, {
+        "UnID": "0840",
+        "Firstname": "Joyce",
+        "Familyname": "Jill",
+        "Email": "joycee@0850.at",
+        "Jobtitle": "Jr. Frontend Developer",
+        "Salary": 1800,
+    }, {
+        "UnID": "0860",
+        "Firstname": "Henry",
+        "Familyname": "Sejudo",
+        "Email": "henrietti@0850.at",
+        "Jobtitle": "Jr. Backend Developer",
+        "Salary": 1800,
+    }, {
+        "UnID": "0870",
+        "Firstname": "Jimmy",
+        "Familyname": "Highroller",
+        "Email": "highroller@0850.at",
+        "Jobtitle": "Janitor",
+        "Salary": 1200,
+    }, {
+        "UnID": "0880",
+        "Firstname": "Timmy",
+        "Familyname": "Highroller",
+        "Email": "hrhighroller@0850.at",
+        "Jobtitle": "HR",
+        "Salary": 1600,
+    }, {
+        "UnID": "0890",
+        "Firstname": "Tom",
+        "Familyname": "Moser",
+        "Email": "hrmoser@0850.at",
+        "Jobtitle": "HR",
+        "Salary": 1600,
+    }, {
+        "UnID": "0900",
+        "Firstname": "Marta",
+        "Familyname": "Mayer",
+        "Email": "hrmayer@0850.at",
+        "Jobtitle": "HR",
+        "Salary": 1200,
+    }, {
+        "UnID": "0910",
+        "Firstname": "Max",
+        "Familyname": "Powers",
+        "Email": "powers@0850.at",
+        "Jobtitle": "Art-Director",
+        "Salary": 4500,
+    }, {
+        "UnID": "0920",
+        "Firstname": "Moritz",
+        "Familyname": "Schlager",
+        "Email": "schlagerdermanager@0850.at",
+        "Jobtitle": "Manager",
+        "Salary": 4200,
+    }, {
+        "UnID": "0930",
+        "Firstname": "Elisabeth",
+        "Familyname": "Lizzo",
+        "Email": "ceo@0850.at",
+        "Jobtitle": "CEO",
+        "Salary": 8000,
+    }]};
+
+
+var i = 0
+document.writeln("<table border='2'><tr>");
+    for (i = 0; i < employees.Workforce.length; i++) {
+            document.writeln("<td>");
+            document.writeln("<table border='1' width=100 >");
+            document.writeln("<tr><td><b>First-Name</b></td><td width=50>" + employees.Workforce[i].Firstname + "</td></tr>");
+            document.writeln("<tr><td><b>Family-Name</b></td><td width=50>" + employees.Workforce[i].Familyname + "</td></tr>");
+            document.writeln("<tr><td><b>ID</b></td><td width=50>" + employees.Workforce[i].UnID + "</td></tr>");
+            document.writeln("<tr><td><b>Email</b></td><td width=50>" + employees.Workforce[i].Email + "</td></tr>");
+            document.writeln("<tr><td><b>Job-Title</b></td><td width=50>" + employees.Workforce[i].Jobtitle + "</td></tr>");
+            document.writeln("<tr><td><b>Salary</b></td><td width=50>" + employees.Workforce[i].Salary + "</td></tr>");
+            document.writeln("</table>");
+            document.writeln("</td>");
+    }
+</script>
+
+    
+
+    
+</body>
+</html>
